@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js" defer></script>
+</head>
+<body>
+<header>
+	<h1>Memory-spel</h1>
+</header>
+<main>
+	<section id="landing-page" class="landing-page">
+			<section id="player-section" class="player-section">
+			<h2>Registrera spelare</h2>
+			<h3>Spelare 1</h3>
+			<input type="text" id="user-name-1">
+			<h3>Spelare 2</h3>
+			<input type="text" id="user-name-2">
+			<button class="start-btn">Starta spelet</button>
+		</section>
+	</section>
+	<section id="game-page" class="game-page">
+		<section class="top-section">
+			<h2>Spelar:&nbsp;</h2>
+			<h2 id="players-turn"> Spelare 1</h2>
+		</section>
+		<aside>
+			<h2>Poäng</h2>
+			<h3 id="player1-name">Spelare 1: </h3>
+			<h3 id="player1-score">0</h3>
+			<h3 id="player2-name">Spelare 2: </h3>
+			<h3 id="player2-score">0</h3>
+			<button id="end-game">Avsluta spel</button>
+		</aside>
+		<section class="main-section">
+			<div class="memory-card" data-pairing="flowers">
+				<img src="IMG/blommor.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers">
+				<img src="IMG/blommor.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers2">
+				<img src="IMG/blommor2.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers2">
+				<img src="IMG/blommor2.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers3">
+				<img src="IMG/blommor3.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers3">
+				<img src="IMG/blommor3.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers4">
+				<img src="IMG/blommor4.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers4">
+				<img src="IMG/blommor4.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers5">
+				<img src="IMG/blommor5.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers5">
+				<img src="IMG/blommor5.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers6">
+				<img src="IMG/blommor6.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers6">
+				<img src="IMG/blommor6.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers7">
+				<img src="IMG/blommor7.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers7">
+				<img src="IMG/blommor7.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers8">
+				<img src="IMG/blommor8.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers8">
+				<img src="IMG/blommor8.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers9">
+				<img src="IMG/blommor9.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers9">
+				<img src="IMG/blommor9.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers10">
+				<img src="IMG/blommor10.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers10">
+				<img src="IMG/blommor10.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers11">
+				<img src="IMG/blommor11.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers11">
+				<img src="IMG/blommor11.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers12">
+				<img src="IMG/blommor12.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+			<div class="memory-card" data-pairing="flowers12">
+				<img src="IMG/blommor12.jpg" alt="Flowers" class="front-face">
+				<img src="IMG/magicpattern.jpg" alt="Background picture" class="back-face">
+			</div>
+		</section>
+	</section>
+</main>
+</body>
+</html>

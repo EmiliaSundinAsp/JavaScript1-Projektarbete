@@ -1,0 +1,167 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
+	background-color: rgb(70, 6, 130);
+	color: white;
+	height: 8vh;
+}
+
+/* CSS för startsida */
+
+.landing-page {
+	display: flex;
+	justify-content: center;
+	background-image: url("IMG/magicpattern.jpg");
+	height: 92vh;
+}
+
+.player-section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 3rem;
+	height: 50vh;
+	width: 50vw;
+	background-color: rgb(210, 176, 243);
+}
+
+.player-section h2,
+h3,
+input {
+	padding: 0.5rem;
+}
+
+.start-btn {
+	margin-top: 1rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	width: 8vw;
+}
+
+/* CSS för spelsida */
+
+#game-page {
+	display: none;
+}
+
+.game-page {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+}
+
+aside {
+	display: flex;
+	align-self: flex-end;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+		top: 8vh;
+		bottom: 0;
+	width: 15vw;
+	background-color: rgb(210, 176, 243);
+}
+
+aside h2 {
+	padding: 0.5rem;
+}
+
+aside h3 {
+	padding: 0.2rem;
+}
+
+aside button {
+	width: 5vw;
+	padding: 0.5rem;
+	margin: 0.5rem;
+}
+
+.top-section {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	padding: 1rem;
+}
+
+
+.main-section {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 85vw;
+	perspective: 1000px;
+}
+
+.memory-card {
+	display: flex;
+	width: 10rem;
+	height: 14rem;
+	position: relative;
+	/*margin: 1em;*/
+	transform: scale(1);
+	transform-style: preserve-3d;
+	transition: transform .5s;
+
+}
+
+.front-face, .back-face {
+	justify-content: center;
+	width: 8rem;
+	height: 12rem;
+	margin: 1rem;
+	position: absolute;
+	border: 2px solid black;
+	backface-visibility: hidden;
+}
+
+.front-face {
+	transform: rotateY(180deg);
+}
+
+.memory-card:active {
+	transform: scale(.97);
+	transition: transform .2s;
+}
+
+.memory-card.flip {
+	transform: rotateY(180deg);
+}
+
+
+
+
+
+/*
+img {
+	width: 8rem;
+	height: 12rem;
+	border: 2px solid black;
+	margin: 1rem;
+	box-shadow: 2rem;
+}
+
+
+.front-face {
+	display: none;
+}
+
+.memory-card {
+	width: 8rem;
+	height: 12rem;
+	border: 2px solid black;
+	margin: 1rem;
+	box-shadow: 2rem;
+}
+*/
